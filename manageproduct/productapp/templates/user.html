@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <div>
+        <h1>Welcome to online shop</h1>
+        <button class=""><a href="/admin">Admin</a></button>
+        <button class=""><a href="/user">User</a></button>
+        <ul>
+            {% for product in products %}
+                <li>
+                    <strong>{{ product.name }}</strong> - ${{ product.price }}<br>
+                    {{ product.description }}
+                </li>
+            {% empty %}
+                <li>No products added yet.</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
