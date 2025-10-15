@@ -1,0 +1,8 @@
+# 1. Create .gitignore (if it doesn't exist)
+echo "db.sqlite3" >> .gitignore
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+echo "*.log" >> .gitignore
+echo ".env" >> .gitignore
+echo "media/" >> .gitignore
+echo "staticfiles/" >> .gitignore
